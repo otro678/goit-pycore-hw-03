@@ -5,8 +5,6 @@ def normalize_phone(phone_number):
     
     if phone_number.startswith('380'):
         phone_number = '+' + phone_number
-    elif phone_number.startswith('+') and not phone_number.startswith('+380'):
-        phone_number = '+38' + phone_number[1:]
     elif not phone_number.startswith('+'):
         phone_number = '+38' + phone_number
     
